@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Sign_Up_css.css"/>
+        <script src="Sign_Up_js.js" type="text/javascript"></script>
+    </head>
+    <body>
+       <div class="container">
+
+           <form id="signup" name="signup" onsubmit="return validate()" method="post" action="check_signup.php">
+
+        <div class="header">
+        
+            <h3>Sign Up</h3>
+            
+            <p>Please fill out this form to Sign Up </p>
+            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+		    <input type="text" placeholder="First Name"  name="fname" id="fname" required autofocus/>
+			
+			<input type="text" placeholder="Last Name"  name="lname" id="lname" required />
+        
+            <input type="tel" placeholder="Mobile" name="mobile" id="mobile" required />
+        
+            <input type="password" placeholder="Password" id="pswd" name="pswd" required/>
+			
+			<input type="password" placeholder="Confirm Password" id="cpswd" name="cpswd" required/>
+			
+			<input type="text" placeholder="Address" name="adrs" id="adrs" required />
+            
+            <div class="checkboxy">
+                <input name="cecky" id="checky" value="1" type="checkbox" required/><label class="terms">I accept the terms of use</label>
+            </div>
+            
+            <input type="submit" onclick="return validate();" value="Sign Up For PepperTap Now." id="submit">
+        
+        </div>
+
+    </form>
+
+</div>
+
+    </body>
+</html>

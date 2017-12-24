@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fruits & Vegetables</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/stylesheet" href="fruits_vegetables_css.css">
+        <script src="fruits_vegetables.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="top_bar" class ="nav_bar">
+            <a href="home.html">
+            <div id="peppertap_logo"><img src="peppertap_logo.png"></div>
+            </a>
+            <div id="search_bar">
+                <input type="text" class="nav_bar" placeholder="Looking for something.. ?" id="input_search">
+                <img src="search.png" height="60px" width="50px" id="magnifier">
+            </div>
+            <div id="account"><img src="Account.png" height="70px" width="130px" id="image_acc"></div>
+            <div id ="mycart"><img src="mycart.png" height="40px" width="60px"></div>
+        </div>
+        <br><br><br>
+        <hr>
+        <div id="con">
+            <p id="para_con"><img src="products_veg_fruits/fruits_logo.png" height="140px" width="400px"></p>
+            <hr>
+        </div>
+        <div id="three_container">
+            <div id="product1" class="products"><img src="products_veg_fruits/capsicum.jpg" width="400px" height="300px">
+                <p class="products_desc"><strong>Capsicum-Red</strong></p>
+                <p class="products_desc">500gm</p>
+                <p class="products_desc"><strong>₹112&nbsp;&nbsp;&nbsp;<img id="minus1" src="minus.png" width="30px" height="30px" onclick="decrement(1)"><span id="qty1" class="result" type="text" maxlength="3" >1</span><img id="plus1" src="plus.jpg" height=30px" width="30px" onclick="increment(1)"></strong>
+                    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart1" onmouseover="changeimg(1)" onmouseout="revertimg(1)">
+                </p>
+            </div>
+            <div id="product2" class="products"><img src="products_veg_fruits/carrot.jpg" width="400px" height="300px">
+            <p class="products_desc"><strong>Carrot-Red</strong></p>
+                <p class="products_desc">250gm</p>
+                <p class="products_desc"><strong>₹15&nbsp;&nbsp;&nbsp;<img id="minus2" src="minus.png" width="30px" height="30px" onclick="decrement(2)"><span id="qty2" class="result" type="text" maxlength="3" >1</span><img id="plus2" src="plus.jpg" height=30px" width="30px" onclick="increment(2)"></strong>
+                    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart2" onmouseover="changeimg(2)" onmouseout="revertimg(2)">
+                </p>
+            </div>
+            <div id="product3" class="products">
+                <img src="products_veg_fruits/cabbage.jpg">
+            <p class="products_desc"><strong>Cabbage</strong></p>
+                <p class="products_desc">500gm</p>
+                <p class="products_desc"><strong>₹14&nbsp;&nbsp;&nbsp;<img id="minus3" src="minus.png" width="30px" height="30px" onclick="decrement(3)"><span id="qty3" class="result" type="text" maxlength="3" >1</span><img id="plus3" src="plus.jpg" height=30px" width="30px" onclick="increment(3)"></strong>
+                    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart3" onmouseover="changeimg(3)" onmouseout="revertimg(3)">
+                </p>
+            </div>
+        </div>
+        <div id="three_container2">
+            <div id="product4" class="products2">
+                <img src="products_veg_fruits/lemon.jpg" width="400px" height="300px">
+            <p class="products_desc"><strong>Lemons</strong></p>
+                <p class="products_desc">250gm</p>
+                <p class="products_desc"><br><strong>₹22&nbsp;&nbsp;&nbsp;<img id="minus4" src="minus.png" width="30px" height="30px" onclick="decrement(4)"><span id="qty4" class="result" type="text" maxlength="3" >1</span><img id="plus4" src="plus.jpg" height=30px" width="30px" onclick="increment(4)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart4" onmouseover="changeimg(4)" onmouseout="revertimg(4)">
+                </p>
+            </div>
+            <br>
+            <div id="product5" class="products2">
+                <img src="products_veg_fruits/apple.png" width="400px" height="300px">
+            <p class="products_desc"><strong>Apples</strong></p>
+                <p class="products_desc">500gm</p>
+                <p class="products_desc"><br><strong>₹180&nbsp;&nbsp;&nbsp;<img id="minus5" src="minus.png" width="30px" height="30px" onclick="decrement(5)"><span id="qty5" class="result" type="text" maxlength="3" >1</span><img id="plus5" src="plus.jpg" height=30px" width="30px" onclick="increment(5)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart5" onmouseover="changeimg(5)" onmouseout="revertimg(5)">
+                </p>
+            </div>
+            <div id="product6" class="products2">
+                <img src="products_veg_fruits/grapes.jpg" width="400px" height="300px">
+            <p class="products_desc"><strong>Grapes-Black</strong></p>
+                <p class="products_desc">500gm</p>
+                <p class="products_desc"><br><strong>₹90&nbsp;&nbsp;&nbsp;<img id="minus6" src="minus.png" width="30px" height="30px" onclick="decrement(6)"><span id="qty6" class="result" type="text" maxlength="3" >1</span><img id="plus6" src="plus.jpg" height=30px" width="30px" onclick="increment(6)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart6" onmouseover="changeimg(6)" onmouseout="revertimg(6)">
+            </div>
+        </div>
+        <div id="three_container3">
+            <div id="product7" class="products">
+                <img src="products_veg_fruits/orange.jpg" width="400px" height="300px">
+            <p class="products_desc"><strong>Orange</strong></p>
+                <p class="products_desc">250gm</p>
+                <p class="products_desc"><br><strong>₹85&nbsp;&nbsp;&nbsp;<img id="minus6" src="minus.png" width="30px" height="30px" onclick="decrement(7)"><span id="qty7" class="result" type="text" maxlength="3" >1</span><img id="plus6" src="plus.jpg" height=30px" width="30px" onclick="increment(7)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart7" onmouseover="changeimg(7)" onmouseout="revertimg(7)">
+            </div>
+            <div id="product8" class="products">
+                <img src="products_veg_fruits/pineapple.jpg" width="400px" height="300px">
+            <p class="products_desc"><strong>Pineapple</strong></p>
+                <p class="products_desc">1 Pc.</p>
+                <p class="products_desc"><br><strong>₹70&nbsp;&nbsp;&nbsp;<img id="minus8" src="minus.png" width="30px" height="30px" onclick="decrement(8)"><span id="qty8" class="result" type="text" maxlength="3" >1</span><img id="plus8" src="plus.jpg" height=30px" width="30px" onclick="increment(8)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart8" onmouseover="changeimg(8)" onmouseout="revertimg(8)"> 
+            </div>
+            <div id="product9" class="products">
+                <img src="products_veg_fruits/watermelon.jpg" width="400px" height="300px">
+            <p class="products_desc"><strong>Watermelon</strong></p>
+                <p class="products_desc">2 Kg.</p>
+                <p class="products_desc"><br><strong>₹50&nbsp;&nbsp;&nbsp;<img id="minus9" src="minus.png" width="30px" height="30px" onclick="decrement(9)"><span id="qty9" class="result" type="text" maxlength="3" >1</span><img id="plus9" src="plus.jpg" height=30px" width="30px" onclick="increment(9)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart9" onmouseover="changeimg(9)" onmouseout="revertimg(9)"> 
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FoodMart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/stylesheet" href="foodmart_css.css">
+        <script src="foodmart.js" type="text/javascript">
+            window.onload=function (){
+                document.getElementById("peppertap_logo").onclick=function() {
+                    window.location.href="home.html";
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <div id="top_bar" class ="nav_bar">
+            <a href="home.html">
+                <div id="peppertap_logo"><img src="peppertap_logo.png" id="pepper_image"></div>
+            </a>
+                
+            <div id="search_bar">
+                <input type="text" class="nav_bar" placeholder="Looking for something.. ?" id="input_search">
+                <img src="search.png" height="60px" width="50px" id="magnifier">
+            </div>
+            <div id="account"><img src="Account.png" height="70px" width="130px" id="image_acc"></div>
+            <div id ="mycart"><img src="mycart.png" height="40px" width="60px"></div>
+        </div>
+        <br><br><br>
+        <hr>
+        <div id="con">
+            <p id="para_con"><img src="products_confectionary/logo.png"></p>
+            <hr>
+        </div>
+        <div id="three_container">
+            <div id="product1" class="products"><img src="products_confectionary/buscuits.jpg" width="400px" height="300px">
+                <p class="products_desc"><strong>PepperTap Bakery Biscuits</strong></p>
+                <p class="products_desc">500gm</p>
+                <p class="products_desc"><strong>₹72&nbsp;&nbsp;&nbsp;<img id="minus1" src="minus.png" width="30px" height="30px" onclick="decrement(1)"><span id="qty1" class="result" type="text" maxlength="3" >1</span><img id="plus1" src="plus.jpg" height=30px" width="30px" onclick="increment(1)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart1" onmouseover="changeimg(1)" onmouseout="revertimg(1)">
+                </p>
+            </div>
+            <div id="product2" class="products"><img src="products_confectionary/toffees.jpg" width="400px" height="300px">
+            <p class="products_desc"><strong>Terry's Toffees Assorted</strong></p>
+                <p class="products_desc">400gm</p>
+                <p class="products_desc"><strong>₹400&nbsp;&nbsp;&nbsp;<img id="minus2" src="minus.png" width="30px" height="30px" onclick="decrement(2)"><span id="qty2" class="result" type="text" maxlength="3" >1</span><img id="plus2" src="plus.jpg" height=30px" width="30px" onclick="increment(2)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart2" onmouseover="changeimg(2)" onmouseout="revertimg(2)">
+                </p>
+            </div>
+            <div id="product3" class="products">
+                <img src="products_confectionary/eggs.jpg">
+            <p class="products_desc"><strong>White Eggs</strong></p>
+                <p class="products_desc">1 dozen (12 eggs)</p>
+                <br>
+                <p class="products_desc"><strong>₹44&nbsp;&nbsp;&nbsp;<img id="minus3" src="minus.png" width="30px" height="30px" onclick="decrement(3)"><span id="qty3" class="result" type="text" maxlength="3" >1</span><img id="plus3" src="plus.jpg" height=30px" width="30px" onclick="increment(3)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart3" onmouseover="changeimg(3)" onmouseout="revertimg(3)">
+                </p>
+            </div>
+        </div>
+        <div id="three_container2">
+            <div id="product4" class="products">
+                <img src="products_confectionary/juice.jpg" width="400px" height="300px">
+            <p class="products_desc"><strong>Tropicana Juice</strong></p>
+                <p class="products_desc">Pack of 3 (1L X 3)</p>
+                <p class="products_desc"><br><strong>₹375&nbsp;&nbsp;&nbsp;<img id="minus4" src="minus.png" width="30px" height="30px" onclick="decrement(4)"><span id="qty4" class="result" type="text" maxlength="3" >1</span><img id="plus4" src="plus.jpg" height=30px" width="30px" onclick="increment(4)"></strong>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="addtocart-blue-22.png" id="add_to_cart4" onmouseover="changeimg(4)" onmouseout="revertimg(4)">
+                </p>
+            </div>
+            <div id="product5" class="products2"></div>
+            <div id="product6" class="products2"></div>
+        </div>
+        
+    </body>
+</html>
